@@ -1,0 +1,114 @@
+.debug {
+  border: 1px solid red;
+}
+
+body {
+  color: rgb(70, 70, 70);
+  text-align: center;
+  margin: 0px;
+	font-family: "Open Sans";  
+}
+
+header {
+  background-color: whitesmoke;
+  padding: 1px 15px 20px 15px;
+}
+
+.main-nav {
+  margin-bottom: 45px;
+}
+
+.main-nav li {
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;  
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.profile-photo {
+  max-width: 70%;
+}
+
+.profile-text {
+  color: gray;
+  font-size: 1.1em;
+}
+
+main > h4 {
+  text-transform: uppercase;  
+  padding-top: 20px;
+}
+
+figure {
+  margin: 40px 20px;
+}
+
+figure > img {
+  max-width: 100%;
+}
+
+figcaption > p {
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: whitesmoke;
+  padding: 10px 15px;
+}
+
+.contact {
+  padding: 30px 0px 40px 0px;
+  border-bottom: 1px solid lightgray;
+}
+
+.contact > h4 {
+  text-transform: uppercase;
+}
+
+.contact > p {
+  color: gray;
+  font-size: 1.1em;
+}
+
+.contact span {
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.contact-msg {
+  padding: 15px 0px;
+}
+
+.footer-nav {
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.footer-nav li:first-child {
+  float: left;
+}
+
+.footer-nav li:last-child {
+  float: right;
+  text-transform: uppercase;
+}
+
+/* ---- Float clearfix ---- */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
