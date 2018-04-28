@@ -3,15 +3,20 @@
 }
 
 body {
+  background-color: whitesmoke;
   color: rgb(70, 70, 70);
   text-align: center;
   margin: 0px;
-	font-family: "Open Sans";  
+  font-family: "Open Sans";  
+  font-weight: 300;
 }
 
 header {
-  background-color: whitesmoke;
   padding: 1px 15px 20px 15px;
+}
+
+main {
+  padding: 1px 0px 20px 0px;
 }
 
 .main-nav {
@@ -45,6 +50,10 @@ ul {
   font-size: 1.1em;
 }
 
+main {
+  background-color: white;
+}
+
 main > h4 {
   text-transform: uppercase;  
   padding-top: 20px;
@@ -63,7 +72,6 @@ figcaption > p {
 }
 
 footer {
-  background-color: whitesmoke;
   padding: 10px 15px;
 }
 
@@ -90,18 +98,23 @@ footer {
   padding: 15px 0px;
 }
 
-.footer-nav {
-  padding: 10px 0px;
+.footer-nav-container {
+  padding: 20px 0px;
   font-weight: bold;
   font-size: .9em;
 }
 
-.footer-nav li:first-child {
+.footer-name li {
   float: left;
 }
 
-.footer-nav li:last-child {
+.footer-nav li {
   float: right;
+  text-transform: uppercase;
+}
+
+.footer-nav-2 {
+  display: none;
   text-transform: uppercase;
 }
 
@@ -112,3 +125,98 @@ footer {
   clear: both;
 }
 
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  header {
+    padding: 30px 15px 40px 15px;
+  }
+
+  .main-nav li {
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  .profile-photo {
+    float: right;
+    padding: 10px;
+  }
+
+  .profile-text {
+    text-align: left;
+    padding: 10px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  figure {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 43%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .contact-msg {
+    display: inline-block;
+    max-width: 480px;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-nav-2 {
+    display: flex;
+    float: right;
+  }
+
+  .footer-nav-2 li {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  header,
+  footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .header-nav-container h1 {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+    padding-top: 20px;
+  }
+
+  .profile-text {
+    padding: 0;
+    margin: 0;    
+  }
+
+  .profile-photo {
+    padding: 0;
+    padding-left: 50px;
+  }
+
+  main {
+    margin: 0px 20px;
+  }
+
+  figure {
+    max-width: 30%;
+  }
+}
