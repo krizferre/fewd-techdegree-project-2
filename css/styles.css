@@ -15,6 +15,14 @@ header {
   padding: 1px 15px 20px 15px;
 }
 
+.header-nav-container h1 {
+  color: tomato;
+  -webkit-text-stroke-color: crimson;
+  -webkit-text-stroke-width: .01em;
+  font-family: "Dancing Script";
+  font-size: 3em;
+}
+
 main {
   padding: 1px 0px 20px 0px;
 }
@@ -24,16 +32,30 @@ main {
 }
 
 .main-nav li {
-  background-color: white;
   margin-bottom: 5px;
-  padding: 10px 15px;
+  padding: 2px;
   text-transform: uppercase;  
   font-weight: bold;
 }
 
+.main-nav li a {
+  border: 1px solid white;
+  padding: 5px;
+  background: white;
+}
+
+.main-nav li a:hover {
+  border: 1px solid grey;
+}
+
 a {
+  color: gray;
   display: block;
   text-decoration: none;
+}
+
+a:link, a:visited {
+  color: grey;
 }
 
 ul {
@@ -65,6 +87,10 @@ figure {
 
 figure > img {
   max-width: 100%;
+}
+
+.skills img {
+  max-width: 20%;
 }
 
 figcaption > p {
@@ -135,9 +161,14 @@ footer {
     padding: 30px 15px 40px 15px;
   }
 
+  .header-nav-container h1 {
+    margin-top: 10px;    
+  }
+
   .main-nav li {
     background-color: transparent;
     display: inline-block;
+    width: 105px;
   }
 
   .profile-photo {
@@ -160,6 +191,10 @@ footer {
     max-width: 43%;
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .skills figure {
+    max-width: 30%;
   }
 
   .contact-msg {
